@@ -1,0 +1,144 @@
+.modal-title{
+  color: #999;
+  text-align: center;
+  line-height: 92rpx;
+}
+.modal-item{
+  color: #333;
+  text-align: center;
+  line-height: 95rpx;
+  border-bottom: 1rpx solid #f3f3f3;
+}
+.modal-item-hover{
+  background: #3d84e5;
+  color: #fff;
+}
+.head{
+   height: 500rpx; 
+   position: relative; 
+}
+.slider-container{
+  height: 418rpx;  
+}
+.slider-item image{
+  width: 100%;
+  height: 100%;
+}
+.search-container{
+  position: absolute;
+  top: 14rpx;
+  left: 0;
+  margin: 0 15rpx;
+  height: 58rpx;
+  border-radius: 29rpx;
+  background: #88bcff;
+  width: 720rpx;
+  display: flex;
+  z-index: 10;
+}
+.country{
+  color: #fff;
+  font-size: 22rpx;
+  line-height: 58rpx;
+  padding-left: 40rpx;
+  position: relative;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  border: 8rpx solid;
+  border-color: #fff transparent transparent transparent;
+  margin: 24rpx 34rpx 0 14rpx;
+}
+.search{
+  margin: 11rpx 0;
+  flex: 1;
+  line-height: 36rpx;
+  font-size: 22rpx;
+  color: #fff; 
+  text-align: center;
+  border-left: 1rpx solid #fff;
+}
+.main-button-container{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 720rpx;
+  margin: 0 15rpx;
+  height: 160rpx;
+}
+.main-button-container button{
+  flex: 1;
+  line-height: 1;
+}
+.main-button-container button image{
+  width: 69rpx;
+  margin: 27rpx 0 14rpx;
+}
+.main-button-container button view{
+  font-size: 24rpx;
+  color: #0a1e3b;
+  font-weight: bold;
+}
+
+.info-title{
+  text-align: center;
+  font-size: 32rpx;
+  color: #0a1e3b;
+  position: relative;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 50rpx;
+}
+.info-title::before{
+  content: "";
+  position: absolute;
+  left: 117rpx;
+  top: 24rpx;
+  z-index: 2;
+  border-top: 1rpx solid #ceced3;
+  width: 144rpx;
+}
+.info-title::after{
+  content: "";
+  position: absolute;
+  right: 117rpx;
+  top: 24rpx;
+  z-index: 2;
+  border-top: 1rpx solid #ceced3;
+  width: 144rpx;
+}
+.info-item-container{
+  margin: 0 15rpx;
+  width: 720rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.info-item{
+  width: 232rpx;
+}
+.info-item image{
+  width: 100%;
+}
+.house-name{
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #333;
+}
+.house-price{
+  font-size: 22rpx;
+  color: #666;
+}
+.house-keywords{
+  font-size: 18rpx;
+  color: #3d84e5;
+  background: #e5f0ff;
+  line-height: 31rpx;
+  border: 1rpx dotted #3d84e5;
+  border-radius: 14rpx;
+  display: inline-block;
+  padding: 0 14rpx;
+  margin-right: 2rpx; 
+
+}

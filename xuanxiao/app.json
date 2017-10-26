@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/eduback/eduback",
+    
+    "pages/testscore/testscore",
+    "pages/baseinfo/baseinfo",
+    "pages/target/target",
+    "pages/SoftPower/SoftPower",
+    "pages/schoolList/schoolList",
+    "pages/teasing/teasing",
+    "pages/success/success",
+    "pages/teasing/success/success"
+  ],
+  "window":{
+     
+  }
+}
+ 

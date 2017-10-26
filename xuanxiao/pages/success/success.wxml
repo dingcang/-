@@ -1,0 +1,4 @@
+<import src="../../common/template/header.wxml" />
+<template is="head" data="{{title}}"></template>
+<view class="content">恭喜您！预约成功，请保持电话畅通，留学 专家通过电话和您第一次沟通。</view>
+<navigator url="../index/index" class="nextStep">返回首页</navigator>

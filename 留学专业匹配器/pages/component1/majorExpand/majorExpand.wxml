@@ -1,0 +1,39 @@
+    
+<modal confirm-text="" cancel-text="" hidden="{{modalHidden}}"  bindtap="onCancelClick">
+    <view >
+        <!--todo 这个地方有些问题，图片的适配没做好-->
+        <image class="modalImage" src="{{fileimg}}" mode="aspectFill"></image>
+    </view>
+</modal>
+<view class="expand">
+  <navigator class="expand-hd" open-type="navigateBack">{{professional_l}}</navigator>
+  <view class="expand-hd-mask"></view>
+  <view class="expand-bd">
+    <view class="expand-bd-list">
+      <view class="item-box">
+        <view class="expand-zdzy-item-hd">在读专业</view>
+        <view class="expand-bd-item-hd">想申专业</view>
+      </view>
+      <block wx:for="{{items}}">
+        <view class="item-box">
+          <view class="expand-zdzy-item">{{item.background}}</view>
+          <view class="expand-bd-item">{{item.enroll}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class="image-container">
+  <block wx:for="{{img}}" wx:key="index">
+    <image src="{{item.padimg}}" data-fileimg="{{item.fileimg}}" bindtap="onImageClick"></image>	
+  </block>
+</view>
+<view class="foot-box"></view>
+
+<block wx:for="{{professional_list}}" wx:key="index"  wx:if="{{item.title==professional_l}}">
+ 
+<view wx:if="{{index+1 != end}}" bindtap="jumpexpand" data-expand="?major={{professional}}&majorExpand={{professional_list[index+1].title}}&type={{type}}"  class="nav1" hover-class="nav1-hover">下一个：{{professional_list[index+1].title}}</view>
+ 
+</block>
+
+<view bindtap="toform" class="nav2" hover-class="nav-hover">顾问帮你选专业</view>

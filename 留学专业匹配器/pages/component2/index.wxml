@@ -1,0 +1,22 @@
+<view class="major-container">
+  <view class="major-list">
+    <block wx:for="{{majorList}}" wx:key="{{item.id}}">
+      <navigator url="major/major?major={{item.name}}" class="{{item.last ? 'major-list-item-lastRow' : ''}}" hover-class="navHover">
+      <view class="major-list-item">
+        <view class="major-image-box">
+          <image src="resources/{{item.imgUrl}}" style="width:{{item.imgW}};height:{{item.imgH}}"></image>
+        </view>
+        <text>{{item.name}}</text>
+      </view>
+      </navigator>
+    </block>
+  </view>
+</view>
+<view class="choose-container">
+  <view class="choose-title">
+    <text>选择您想申的专业</text>
+  </view>
+  <view class="choose-btn">
+    <button bindtap="switchToBnx" hover-class="btn-hover">不知道选哪个? 顾问帮你选</button>
+  </view>
+</view>

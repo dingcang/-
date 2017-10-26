@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/component1/index",
+    "pages/component1/major/major",
+    "pages/component1/majorExpand/majorExpand",
+    "pages/component2/index",
+    "pages/component2/major/major",    
+    "pages/component3/index",
+    "pages/component3/submit/submit",
+    "pages/component4/index",
+    "pages/component4/form/form"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#3bb4f3",
+    "navigationBarTitleText": "留学专业匹配器",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#848484",
+    "selectedColor": "#2ba0f7",
+    "backgroundColor": "#fafbfd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/component1/index",
+        "text": "想申专业",
+        "iconPath": "images/tabBar/one.png",
+        "selectedIconPath": "images/tabBar/selectedOne.png"
+      },
+      {
+        "pagePath": "pages/component2/index",
+        "text": "在读专业",
+        "iconPath": "images/tabBar/two.png",
+        "selectedIconPath": "images/tabBar/selectedTwo.png"
+      },
+      {
+        "pagePath": "pages/component3/index",
+        "text": "帮你选",
+        "iconPath": "images/tabBar/three.png",
+        "selectedIconPath": "images/tabBar/selectedThree.png"
+      },
+      {
+        "pagePath": "pages/component4/index",
+        "text": "使用指南",
+        "iconPath": "images/tabBar/four.png",
+        "selectedIconPath": "images/tabBar/selectedFour.png"
+      }
+    ]
+  }
+}

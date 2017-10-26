@@ -1,0 +1,15 @@
+<import src="../../common/template/header.wxml"/>
+<template is="head" data="{{title}}"></template>
+<view class="body">
+  <form>
+    <view class="stateContainer">
+      <view class="state {{state[0] ? 'stateOn' : ''}}" bindtap="state" data-index="0">没有结果</view>
+      <view class="state {{state[1] ? 'stateOn' : ''}}" bindtap="state" data-index="1">结果不准</view>
+    </view>
+    <textarea name="textarea" class="content"/>
+    <view class="mt156">
+      <button class="resetContent">清空重新</button>
+      <navigator url="" class="nextStep">下一步</navigator>
+    </view>
+  </form>
+</view>

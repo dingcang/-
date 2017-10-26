@@ -1,0 +1,62 @@
+<!--pages/detail/detail.wxml-->
+<view class='section section1'>
+  <image src='../../resources/images/detail.jpg'></image>
+  <view class='item-info'>
+    <view class='item-left'>
+      <view class='item-name'>房屋名称</view>
+      <view class='item-university'>{{item.university}}</view>
+      <view class='item-university'>{{item.university}}</view>
+      <view class='item-price'><text>{{item.price}}</text>/月</view>
+    </view>
+    <view class='item-right'>{{item.right}}</view>
+  </view>
+</view>
+<view class='section section2'>
+  <view class='item-name'>房屋地址</view>
+  <view class='item-university'>所在地：{{}}州{{}}城市{{}}地区</view>
+  <view class='item-university'>详细地址：{{}}</view>
+  <view class='detailInfo'>
+    <view>
+      <view class='detailInfo-item-key'>房屋类型：</view>{{detailInfo.type}}
+    </view>
+    <view>
+      <view class='detailInfo-item-key'>房源属性：</view>{{detailInfo.type}}
+    </view> 
+    <view>
+      <view class='detailInfo-item-key'>面<view></view>积：</view>{{detailInfo.type}}
+    </view>
+    <view>
+      <view class='detailInfo-item-key'>户<view></view>型：</view>{{detailInfo.type}}
+    </view>
+    <view>
+      <view class='detailInfo-item-key'>价<view></view>格：</view>{{detailInfo.type}}
+    </view>
+    <view>
+      <view class='detailInfo-item-key'>付款方式：</view>{{detailInfo.type}}
+    </view>
+    <view>
+      <view class='detailInfo-item-key'>房源状态：</view>{{detailInfo.type}}
+    </view>
+    <view>
+      <view class='detailInfo-item-key'>交房时间：</view>{{detailInfo.type}}
+    </view>
+  </view>
+  <view class='detailInfo-item-2'>
+    <view class='detailInfo-item-key-2'>房屋类型：</view>{{detailInfo.type}}
+  </view>
+  <view class='detailInfo-item-2'>
+    <view class='detailInfo-item-key-2'>费用组成：</view>{{detailInfo.type}}
+  </view>
+  <view class='detailInfo-item-2'>
+    <view class='detailInfo-item-key-2'>费用组成：</view>{{detailInfo.type}}1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  </view>
+</view>
+<view class='section section3'>
+  <view class='item-name'>配套设施</view>
+  <view class='ptss'>
+    <image mode='widthFix' src='../../resources/images/computer.png'></image>
+    <image mode='widthFix' src='../../resources/images/phone.png'></image>
+    <image mode='widthFix' src='../../resources/images/wifi.png'></image>
+    <image mode='widthFix' src='../../resources/images/telephone.png'></image>
+  </view>  
+</view>

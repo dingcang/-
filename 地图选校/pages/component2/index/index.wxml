@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<scroll-view scroll-x="true" scroll-y="true" scroll-left="{{scrollLeft}}" scroll-top="{{scrollTop}}">
+  <image data-time='{{lastTapTime}}' src='../../../resources/images/map.png' bindtap='doubleClick' style='width:{{ scaleWidth }}rpx; height:{{ scaleHeight }}rpx'>
+    <navigator class='{{show}}' wx:for="{{state}}" style="left:{{item.left}}rpx;top:{{item.top}}rpx;transform:rotate({{item.rotate}}deg)" url="../state/state?{{item.navigator}}">{{item.state}}</navigator>
+  </image>
+</scroll-view>

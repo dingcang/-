@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="icon-image">
+      <image src="../../images/logo.png" mode="aspectFill"></image>
+</view>
+<view  class="icon-btn" bindtap="nextStep">
+    <view  class="next-step" >立即测试</view>  
+</view>
+<view class="icon-trips">
+     <view class="icon-text1">知道选校相关数据全部来自于天道留学内部真实案例数据,最终解释权归天道所有.</view>
+     <view class="icon-text2">天道智能选校系统beta版</view>
+</view>

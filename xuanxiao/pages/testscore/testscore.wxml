@@ -1,0 +1,45 @@
+<!--testscore.wxml-->
+<view class="icon-base">考试成绩</view>
+<form bindsubmit="submitFn">
+<view class="page-body" style="border-bottom:solid 1px #e4e7f0">
+    <view class="page-section">
+        <view class="weui-cells weui-cells_after-title {{toeflStyle}}" >
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="text" bindfocus="focusFn" name="toefl"  placeholder="请输入您的托福成绩" placeholder-style="color:#b1c0e1"/>
+            </view>
+        </view>
+    </view>
+    <view class="page-section">
+        <view class="weui-cells weui-cells_after-title {{ietlStyle}} ">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="text" bindfocus="focusFn" name="ielts" placeholder="请输入您的雅思成绩" placeholder-style="color:#b1c0e1"/>
+            </view>
+        </view>
+    </view>
+</view>  
+<!--<view class="icon-text">单击添加其他考试成绩:</view>-->
+<view class="section">
+  <view class="section__title">单击添加其他考试成绩:</view>
+  <view class="secionMain">
+    <block wx:for="{{section}}" wx:for-item="i" wx:for-index="idx">
+      <view class="sectionItemBox">
+        <view class="sectionItem {{i.styleFlag ? 'styleOn' : ''}}" bindtap="show" data-index="{{idx}}">{{i.name}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+<!--点击出现对应的input框START-->
+ <block wx:for="{{list}}">
+  <view class="itemView {{item.itemClass}}" hidden="{{item.Falg}}">
+    <label class="itemName">{{item.content}}</label>
+    <input class="input" name="{{item.Falg ? '' : item.name}}"  bindfocus="focusFn" bindblur="setValue" data-index="{{index}}"  placeholder="{{item.placeholder}}" placeholder-class="inputHold" value="{{item.value}}"/>
+  </view>
+ </block>
+<!--点击出现对应的input框END-->
+  <view class="wrong-message">{{errorMsg}}</view>
+  <button class="sumit-btn"form-type="submit" >下一步</button>
+</form>
+
+
+
+ 

@@ -1,0 +1,2 @@
+<!--pages/component2/state/state.wxml-->
+<text>{{page}}.wxml</text>

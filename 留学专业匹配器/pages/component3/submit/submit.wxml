@@ -1,0 +1,13 @@
+<view class="stageImageBox">
+  <image src="../resources/images/{{stage}}.png" class="stage"></image>
+</view>
+<view class="MessageBox" style="display:{{failure}}">
+  <text class="p1">很遗憾，符合条件的群都暂时不开放了</text>
+  <text class="p2">天道留学VIP群（简称天道VIP群）暂时不开放招募</text>
+  <text class="p2">请微信加<text class="p3">“天小道”</text>为好友，我们将为您精准推荐最适合您的群</text>
+  
+</view>
+<view class="MessageBox"  style="display:{{success}}">
+  <text class="p1">您的信息已经成功提交~ </text>
+  <text class="p2">我们将会在24小时内联系您~请您保存手机畅通~</text>
+</view>

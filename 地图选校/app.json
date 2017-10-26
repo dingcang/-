@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/component2/index/index",
+    "pages/component1/index/index",
+    "pages/component2/state/state",
+    "pages/component3/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#3f8cff",
+    "navigationBarTitleText": "美国留学大学地图",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "4c5d7d",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/component1/index/index",
+        "text": "帮你选",
+        "iconPath": "resources/images/tabBar/componentOne.png",
+        "selectedIconPath": "resources/images/tabBar/componentOneSelected.png"
+      },
+      {
+        "pagePath": "pages/component2/index/index",
+        "text": "地图",
+        "iconPath": "resources/images/tabBar/componentTwo.png",
+        "selectedIconPath": "resources/images/tabBar/componentTwoSelected.png"
+      },
+      {
+        "pagePath": "pages/component3/index/index",
+        "text": "想去",
+        "iconPath": "resources/images/tabBar/componentThree.png",
+        "selectedIconPath": "resources/images/tabBar/componentThreeSelected.png"
+      }
+    ]
+  },
+  "debug": true
+}

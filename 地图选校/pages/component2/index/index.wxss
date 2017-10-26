@@ -1,0 +1,17 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+scroll-view{
+  width: auto;
+}
+image{
+  position: relative;
+  overflow: auto; 
+}
+image navigator{
+  position: absolute;
+}
+.hide{
+  display: none;
+}

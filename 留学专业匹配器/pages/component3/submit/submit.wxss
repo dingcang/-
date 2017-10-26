@@ -1,0 +1,35 @@
+page{
+  height: 100%;
+  background: #eee;
+  text-align: center;
+}
+.stageImageBox{
+  height: 50%;
+  position: relative;
+}
+.stage{
+  width: 393rpx;
+  height: 409rpx;
+  position: absolute;
+  bottom: 2rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.MessageBox text{
+  display: block;
+}
+.MessageBox .p1{
+  color: #333;
+  font-size: 32rpx;
+  line-height: 91rpx;
+}
+.MessageBox .p2{
+  font-size: 22rpx;
+  line-height: 32rpx;
+  color: #6f6f6f;
+}
+.MessageBox .p3{
+  display: inline;
+  color: #33a4f7;
+}

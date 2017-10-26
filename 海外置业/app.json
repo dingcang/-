@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/search/search",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#fafafa",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天道海外置业",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true
+}

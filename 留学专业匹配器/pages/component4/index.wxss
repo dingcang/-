@@ -1,0 +1,75 @@
+page{
+  background: #eee;
+}
+.container{
+  background: #fff;
+  padding: 0 30rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx; 
+}
+.title{
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  display: block;
+  line-height: 91rpx;
+  text-align: center;
+}
+.content{
+  color: #666;
+  font-size: 26rpx;
+  line-height: 38rpx;
+}
+.p1{
+  color: #333;
+  font-size: 26rpx;
+  font-weight: bold;
+  display: block;
+  margin: 28rpx 0 10rpx;
+}
+.container button{
+  margin: 40rpx 30rpx;
+  line-height: 84rpx;
+  color: #fff;
+  background: #2ba0f7;
+  border-radius: 42rpx;
+  font-size: 32rpx;
+}
+.container button.joinus{
+  background: #f28e30;
+}
+.container button.joinusHover{
+  background: #ef7502;
+}
+.telephone{
+  color: #33a4f7;
+}
+.unit{
+  line-height: 79rpx;
+  border-bottom: 1px solid #eee;
+}
+lastUnit{
+  border: none;
+}
+.unit image{
+  vertical-align: middle;
+  padding:0 25rpx 0 10rpx; 
+}
+.unit text{
+  line-height: 79rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.footBtn{
+  margin: 40rpx 30rpx 20rpx;
+  line-height: 84rpx;
+  color: #fff;
+  background: #2ba0f7;
+  border-radius: 42rpx;
+  font-size: 32rpx;
+}
+.footText{
+  display: block;
+  text-align: center;
+  margin-bottom: 40rpx;
+}

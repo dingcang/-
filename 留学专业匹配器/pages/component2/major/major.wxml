@@ -1,0 +1,37 @@
+<loading hidden="{{hidden}}">
+    加载中......
+</loading>
+<view class="major-container">
+  <view class="major-list-item-hd-mask"></view>
+  <view class="major-list">
+    <navigator open-type="navigateBack" class="major-list-item-hd" >
+      <view class="major-image-box">
+        <image src="../resources/{{majorData.imgUrl}}" style="width:{{majorData.imgW}};height:{{majorData.imgH}}"></image>
+      </view>
+      <text class="major-name">{{major}}</text>
+    </navigator>
+    <view class="major-list-item-bd">
+      <block wx:for="{{items[major]}}">
+        <view class="item-bd-item">
+          <navigator url="../../component1/majorExpand/majorExpand?major={{major}}&majorExpand={{item.title}}&type=major">{{item.title}}</navigator>
+        </view>
+      </block>
+    </view>
+    <view wx:if="{{next.name}}">
+    <view bindtap="jumpmajor" data-majorto="{{next.name}}" >
+      <view class="major-list-item-hd major-list-item-hd-bottom"  hover-class="major-list-item-hd-hover">
+        <text class="major-name">下一个：</text>
+        <view class="major-image-box">
+          <image src="../resources/{{next.imgUrl}}" style="width:{{next.imgW}};height:{{next.imgH}}"></image>
+        </view>
+        <text class="major-name">{{next.name}}</text>
+      </view>
+    </view>
+    </view>	
+    <view bindtap="toform" class="bnx-btn">顾问帮你选专业</view>
+  </view>
+  <view class="foot-mask"></view>
+</view>
+
+
+

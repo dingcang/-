@@ -1,0 +1,26 @@
+<!--pages/list/list.wxml-->
+<view class='title'>
+  <view class='integrate' data-index='0' bindtap='showModal'>{{integrateValue}}</view>
+  <view class='region' data-index='1' bindtap='showModal'>{{regionValue}}</view>
+  <view class='price' data-index='2' bindtap='showModal'>{{priceValue}}</view>
+  <view class='more' data-index='3' bindtap='showModal'>更多</view>
+</view>
+<view class='list-container'>
+  <navigator url='../detail/detail' class='list-item' wx:for='{{list}}'>
+    <image mode='widthFix' src='{{item.imageSrc}}'></image>
+    <view class='item-info'>
+      <view class='item-name'>{{item.name}}</view>
+      <view class='item-university'>{{item.university}}</view>
+      <view class='item-price'><text>{{item.price}}</text>/月</view>
+      <view class='item-keywords' wx:for='{{item.keywords}}' wx:for-item='keywords'>{{keywords}}</view>
+    </view>
+  </navigator>
+</view>
+<view class='modal-container' hidden='{{modalHidden}}'>
+  <view class='modal-mask'></view>
+  <view class='modal'>
+    <view class='modal-item' wx:for='{{modalItem}}' data-item='{{item}}'>{{item}}</view>
+    <button class='cancel' hover-class='btn'>清空</button>
+    <button class='confirm' hover-class='btn'>确定</button>
+  </view>
+</view>

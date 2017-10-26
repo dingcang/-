@@ -1,0 +1,23 @@
+<import src="../../common/template/header.wxml" />
+<template is="head" data="{{title}}"></template>
+<block wx:if="{{listShow}}" wx:for="{{schoolList}}">
+  <view class="school-item">
+    <image src="{{item.school_img}}" class="logo"></image>
+    <view class="content">
+      <view class="firstLine">
+        {{item.school_name}}<text>{{item.education}}</text>
+      </view>
+      <view class="secondLine">
+        <image src="../../images/degree.png" mode="aspectFit"></image>
+        <text>{{item.country}}</text>
+        <image src="../../images/country.png" mode="aspectFit"></image>
+        <text>{{item.offer_special}}</text>
+        <image src="../../images/others.png" mode="aspectFit"></image>
+        <text>{{item.school_rank}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+<text class='text-desc'>{{notice}}</text>
+<navigator open-type="redirect" url="../success/success" class="nextStep">免费预约留学方案</navigator>
+<navigator url="../teasing/teasing" class="tucao">不满意？去吐槽 > ></navigator>

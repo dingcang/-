@@ -1,0 +1,12 @@
+.content{
+  margin: 50rpx 150rpx 0 115rpx;
+  font-size: 26rpx;
+  line-height: 38rpx;
+  color: #67758b;
+}
+.nextStep{
+  position: fixed;
+  bottom: 130rpx;
+  left: 0;
+  right: 0;
+}

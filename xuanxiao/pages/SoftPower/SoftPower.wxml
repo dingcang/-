@@ -1,0 +1,43 @@
+<view class="head">
+  <text>软实力</text>
+</view>
+<form bindsubmit="submitFn">
+<view class="main">
+    
+    <picker name="internship"  range="{{internshipArr}}" bindchange="internshipChange" value="{{internshipArr[internshipIndex]}}">
+    <view class="picker">{{internshipDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker> 
+		
+    <picker name="research" range="{{researchArr}}"  bindchange="researchChange" value="{{researchArr[researchIndex]}}" >
+      <view class="picker">{{researchDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker> 	
+
+    <picker name="rewards" range="{{rewardsArr}}" bindchange="rewardsChange" value="{{rewardsArr[rewardsIndex]}}">
+      <view class="picker">{{rewardsDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker> 
+
+    <picker name="volunteer" range="{{volunteerArr}}" bindchange="volunteerChange" value="{{volunteerArr[volunteerIndex]}}">
+      <view class="picker">{{volunteerDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker>
+
+    <picker name="overseas" range="{{overseasArr}}" bindchange="overseasChange" value="{{overseasArr[overseasIndex]}}">
+      <view class="picker">{{overseasDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker>
+
+    <picker name="letter" range="{{letterArr}}" bindchange="letterChange" value="{{letterArr[letterIndex]}}">
+      <view class="picker">{{letterDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker>    
+
+ 	
+</view>
+<view class="wrong-message" wx:if="{{tipflag}}">{{tip}}</view> 
+<button class="nextStep" form-type="submit" >下一步</button>
+</form>
+
+

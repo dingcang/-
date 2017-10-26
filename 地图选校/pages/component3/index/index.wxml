@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<text class="title">我想去的学校：<text>{{nub}}</text>所</text>
+<text class="introduction">一般留学选校，推荐的数量是8-20所学校：冲刺学校（3-5所），目标学校（3-5所）和保底学校（3-5所）<br/>
+看看你最想去哪所学校，提前规划，目标的实现会更容易哦~</text>
+<view wx:for="{{}}">
+  
+</view>

@@ -1,0 +1,50 @@
+page{
+  background: #fafbff;
+}
+.body{
+  margin: 0 94rpx;
+}
+.stateContainer{
+  margin: 38rpx 0 18rpx;
+}
+.state{
+  display: inline-block;
+  width: 134rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #99b1d6;
+  background: #fff;
+  margin-right: 10rpx;
+  border-radius: 3px;
+  border: 1px solid #99b1d6;
+}
+.stateOn{
+  background: #95acc8;
+  color: #fff;
+}
+.content{
+  width: 100%;
+  height: 404rpx;
+  background: #fff;
+  border: 1px solid #a8b7ce;
+  border-radius: 2px;
+}
+.mt156{
+  margin-top: 156rpx;
+}
+.resetContent{
+  display: inline-block;
+  width: 260rpx;
+  line-height: 94rpx;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 36rpx;
+  background: #95acc8;
+}
+.nextStep{
+  width: 260rpx;
+  line-height: 94rpx;
+  border-radius: 3px;
+  float: right;
+}

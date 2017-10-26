@@ -1,0 +1,60 @@
+page{
+  background: #eee;
+}
+form{
+  padding: 0 30rpx;
+  display: block;
+  background: #fff;
+  position: relative;
+}
+.container{
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  height: 92rpx;
+  align-items:center;
+}
+.container label{
+  width: 190rpx;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  color: #9d9d9d;
+}
+.container input,.container picker{
+  flex: 1;
+  font-size: 28rpx;
+}
+.container image{
+  width: 17rpx;
+  height: 28rpx;
+  padding-right: 22rpx;
+}
+.noBorder{
+  border: none;
+}
+.foot{
+  position: absolute;
+  bottom: -131rpx;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.foot button{
+  margin: 50rpx 30rpx 0;
+  line-height: 84rpx;
+  color: #fff;
+  background: #2ba0f7;
+  border-radius: 42rpx;
+  font-size: 32rpx;
+}
+.tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 40rpx;
+  font-size: 35rpx;
+  color: red;
+}

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<form>
+  <block wx:for="{{formItem}}">
+    <view class="form-item-container">
+      <label wx:if="{{item.label}}">{{item.label}}</label>
+      <input name="{{item.name}}" type="text" id="item.id" bindtap="valueChanged"
+      confirm-type="next" placeholder="{{item.placeholder}}" placeholder-style="color:#a0b6d9;font-size:24rpx;"/>
+      <view wx:if="{{index == 2}}" class="getCode">获取短信验证码</view>
+    </view>
+  </block>
+  <button form-type="submit">提交</button>
+</form>

@@ -1,0 +1,50 @@
+<import src="../../common/template/header.wxml"/>
+<template is="head" data="{{title}}"></template>
+<form bindsubmit="submitFn">
+<view class="main">
+    <input style="display:none" name="country" value="{{datacountry}}"></input>	 
+    <picker   range="{{countryArr}}" bindchange="countryChange" value="{{countryArr[countryIndex]}}">
+      <view class="picker">{{countryDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker> 
+	
+	<view class="inputContainer">
+	<input type="text" name="major" placeholder="请输入您的意向专业名称" placeholder-class="majorName" bindinput="bindMajorChange">	 
+	</input>
+	</view>	
+	
+    <picker name="majortype" range="{{majortypeArr}}"  bindchange="majortypeChange" value="{{majortypeArr[majorIndex]}}" >
+      <view class="picker">{{majorDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker> 	
+
+	<input style="display:none" name="degree" value="{{datadegree}}"></input>
+    <picker range="{{degreeArr}}" bindchange="degreeChange" value="{{degreeArr[degreeIndex]}}">
+      <view class="picker">{{degreeDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker> 
+
+    <picker name="time" range="{{timeArr}}" bindchange="timeChange" value="{{timeArr[timeIndex]}}">
+      <view class="picker">{{timeDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker>
+
+	<view class="secondary">
+	<text>第二意向专业(选填:)</text>
+	</view>
+	<view class="inputContainer">
+	<input type="text" name="majortwo" placeholder="请输入您的意向专业名称" placeholder-class="majorName" bindinput="bindMajorTwoChange">
+ 
+	</input>
+	</view>
+    <picker name="majortypetwo" range="{{majortypeArr}}" id="majortypetwo" bindchange="majortypetwoChange" value="{{majortypeArr[majortypetwoIndex]}}" >
+      <view class="picker">{{majortypetwoDefault}}</view>
+	  <view class="selectBtn"></view>
+    </picker> 
+ 	
+</view>
+<view class="wrong-message" wx:if="{{tipflag}}">{{tip}}</view> 
+<button class="nextStep" form-type="submit" >下一步</button>
+</form>
+
+

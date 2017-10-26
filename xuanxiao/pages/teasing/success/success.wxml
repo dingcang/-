@@ -1,0 +1,4 @@
+<import src="../../../common/template/header.wxml" />
+<template is="head" data="{{title}}"></template>
+<view class="content">恭喜您！吐槽完成！我们会慎重考虑您的建议！您的关注和认可，是我们最大的动力！</view>
+<view bindtap="returnindex" class="nextStep">返回首页</view>

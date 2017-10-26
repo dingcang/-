@@ -1,0 +1,110 @@
+@import "../../common/weui.wxss";
+page{
+  background:#fafbff;
+}
+.icon-base{
+  height: 50px;
+  line-height: 50px;
+  width:100%;
+  font-size:16px;
+  border-bottom:solid 1px #e4e7f0;
+  text-align: center;
+  color: #879abb;
+  font-weight: bold;
+}
+.weui-cells{
+   width:90%;
+   margin-left:20px;
+   border-left:#d9d9d9 1px solid;
+   border-right: #d9d9d9 1px solid;
+   /*text-align: center;*/
+   margin-top:10px;
+}
+.weui-input{
+   width:100%;
+   color:#b1c0e1;
+}
+
+.page-section{
+  margin:15px 0;
+}
+.wrong-message{
+  text-align: center;
+  margin:20px 0 10px 0;
+  color:red;
+}
+
+.sumit-btn{
+  width:60%;
+  background-color: #126efd;
+  color:#fafbff;
+}
+
+.section__title{
+  color:#a1b8dc;
+  font-size:26rpx;
+  margin:20px 0 0 20px;
+}
+ .flex-wrp{
+  display:flex;
+}
+.flex-item{
+  width: 180rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color:#a0b9cf;
+}
+.itemborder{
+  border:solid 1px #b1c0e1;
+  font-size: 30rpx;
+  text-align: center;
+  margin:5rpx 5rpx;
+  border-radius: 5rpx;
+}
+
+.itemView{
+  margin-top: 10px;
+  margin-left: 30px;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  font-size:30rpx;
+  color:#a1b8dc;
+}
+.input{
+ border: 1px solid lightgray;
+ width:70%;
+ height:40px;
+ border-radius: 2px;
+}
+
+.itemName{
+  width:50px;
+}
+
+.inputHold{
+  color:#a1b8dc
+}
+.secionMain{
+  margin: 0 70rpx;
+}
+.sectionItemBox{
+  width: 33%;
+  display: inline-block;
+}
+.sectionItem{
+  border:solid 1px #b1c0e1;
+  font-size:30rpx;
+  text-align:center;
+  margin:5rpx 5rpx;
+  border-radius:5rpx;
+  line-height: 70rpx;
+  color:#a0b9cf;
+}
+.styleOn{
+  background-color:#95acc8;
+  color:#fff;
+}
+.toeflStyle,.ietlStyl,.scoreStyle{
+  border:solid 1px red;
+}

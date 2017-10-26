@@ -1,0 +1,53 @@
+<view class="container">
+  <text class="title">关于天道</text>
+  <text class="content">天道教育致力于为莘莘学子提供高质量的海外留学申请，出国考试辅导及职业规划咨询服务,公司总部设在北京，并在全国13个城市有分公司。\n每年，天道将超过6000名学子送达他们的梦想学校，80%获得美国前50和英国前10的录取。</text>
+  <text class="p1">天道六大业务板块：</text>
+  <view class="unit">
+    <image src="resources/icon1.png" style="width:42rpx;height:42rpx;"></image>
+    <text>世界名校申请服务</text>
+  </view>
+  <view class="unit">
+    <image src="resources/icon2.png" style="width:42rpx;height:42rpx;"></image>
+    <text>留学标准化考试培训服务</text>
+  </view>
+  <view class="unit">
+    <image src="resources/icon3.png" style="width:42rpx;height:42rpx;"></image>
+    <text>睿艺艺术留学申请服务</text>
+  </view>
+  <view class="unit">
+    <image src="resources/icon4.png" style="width:42rpx;height:42rpx;"></image>
+    <text>睿德青少年潜力开发服务</text>
+  </view>
+  <view class="unit">
+    <image src="resources/icon5.png" style="width:42rpx;height:42rpx;"></image>
+    <text>睿驰背景提升和课外活动辅导服务</text>
+  </view>
+  <view class="unit lastUnit">
+    <image src="resources/icon6.png" style="width:42rpx;height:42rpx;"></image>
+    <text>留学和考试在线教育服务</text>
+  </view>
+  <button class="footBtn" bindtap="callmeTap"  hover-class="btn-hover">免费咨询电话：400-019-0038</button>
+  <text class="footText">官方微信：tiandaojiaoyu</text>
+</view>
+<view class="container">
+  <text class="title">数据来源</text>
+  <text class="content">全部专业匹配数据来源于天道教育集团2015-2017年的真实录取，共计30000+条数据（数据还在不断更新中）。</text>
+  <text class="p1">想申的专业：</text>
+  <text class="content">根据中国学生主要申请的美国，英国，加拿大，日本，香港，新加坡，澳大利亚，新西兰，德国，法国，荷兰等国家的热门专业，共计10大类，132个小类。</text>
+  <text class="p1">在读的专业：</text>
+  <text class="content">根据2012年教育部发布的《普通高等学校专业目录》中所包含的专业，共计10大类，92个小类。</text>
+  <button bindtap="callmeTap" hover-class="btn-hover">免费查询全部录取匹配数据</button>
+</view>
+<view class="container">
+  <text class="title">匹配方法</text>
+  <text class="p1">按照想申请的专业匹配：</text>
+  <text class="content">根据您想申请的专业所属类别进行精准匹配</text>
+  <text class="p1">按照在读的专业匹配：</text>
+  <text class="content">根据您在读专业的类别进行精准匹配</text>
+  <text class="p1">预约咨询顾问匹配：</text>
+  <text class="content">通过免费咨询电话<text class="telephone">400-019-0038</text>或在线，预约咨询顾问一对一咨询选专业</text>
+  <button bindtap="callmeTap"  hover-class="btn-hover">免费预约顾问进行专业匹配</button>
+  <text class="p1">加入天道粉丝群匹配：</text>
+  <text class="content">加入天道粉丝群，和申请的小伙伴一起选专业</text> 
+  <button bindtap="joinus" class="joinus" hover-class="joinusHover">现在就加入</button>
+</view>

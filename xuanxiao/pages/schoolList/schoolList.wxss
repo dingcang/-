@@ -1,0 +1,51 @@
+.school-item{
+  margin: 54rpx 56rpx 0;
+  height: 110rpx;
+  display: flex;
+}
+.logo{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 24rpx;
+}
+.content{
+  flex: 1;
+}
+.firstLine{
+  font-size: 32rpx;
+  display: block;
+  color: #476593;
+}
+.firstLine text{
+  float: right;
+  font-size: 26rpx;
+}
+.secondLine image{
+  width:30rpx;
+  height: 20rpx;
+  margin-right: 2px;
+}
+.secondLine text{
+  color: #a2afc9;
+  font-size: 26rpx;
+  width: 106rpx;
+  display: inline-block;
+}
+.nextStep{
+  margin-top: 82rpx;
+  margin-bottom: 15rpx;
+}
+.tucao{
+  text-align: center;
+  font-size: 26rpx;
+  color: #126efd;
+  line-height: 38rpx;
+}
+.text-desc{
+   font-size: 26rpx;
+   line-height: 20px;
+   width:100%;
+   text-align:center;
+   margin-top:20px;
+   display:inline-block;
+}

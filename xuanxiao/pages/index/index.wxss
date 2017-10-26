@@ -1,0 +1,48 @@
+/**index.wxss**/
+page,.icon-image{
+  height:100%;
+}
+image{
+  height:100%;
+  width:100%;
+  display: block
+}
+.icon-btn{  
+  display: block;
+  width:40%;
+  line-height: 35px;
+  margin: 30px auto;
+  position: absolute;
+  left:30%;
+  top:42%;
+}
+.next-step{
+  font-size: 18px;
+  color: #fff;
+  background-color: #126efd;
+  border: 1px solid #126efd;
+  border-radius: 4px;
+  text-align: center;
+
+}
+.icon-share{
+   color:#fff;
+   font-size: 12px;
+}
+.icon-trips{
+    position: absolute;
+    left:30px;
+    bottom:50px;
+}
+.icon-text1{
+    font-size: 28rpx;
+    color:#b5afbd;
+    line-height: 50rpx;
+}
+.icon-text2{
+   margin-top:40rpx;
+   color:#4689fe;
+   font-size: 30rpx;
+   font-weight: bold;
+   text-align: center;
+}

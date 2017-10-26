@@ -1,0 +1,23 @@
+/**index.wxss**/
+.title{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin: 50rpx auto 36rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #2a4775;
+}
+.title text{
+  font-size: 30rpx;
+}
+.introduction{
+  color: #8398b8;
+  font-size: 22rpx;
+  margin: 0 42rpx;
+  padding: 0 12rpx;
+  display: inline-block;
+  line-height: 34rpx;
+  padding-bottom: 48rpx;
+  border-bottom: 1px solid #e6eaf1;
+}

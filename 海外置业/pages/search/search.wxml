@@ -1,0 +1,6 @@
+<!--pages/search/search.wxml-->
+<input class='search' type='text' placeholder='请输入所在地域或学校名称' placeholder-class='search-placeholder' confirm-type='search' bindconfirm='search'></input>
+<view class='tip'>历史搜索</view>
+<view class='history-container'>
+  <view class='history' wx:for='{{history}}'>{{item}}</view>
+</view>

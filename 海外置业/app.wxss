@@ -1,0 +1,27 @@
+page{
+  background: #fafafa;
+}
+
+.item-name{
+  font-size: 24rpx;
+  color: #333;
+  font-weight: 600;
+}
+.item-university, .item-price{
+  font-size: 22rpx;
+  color: #878787;
+}
+.item-price text{
+  color: #f33b22;
+}
+.item-keywords{
+  font-size: 18rpx;
+  color: #3d84e5;
+  background: #e5f0ff;
+  line-height: 31rpx;
+  border: 1rpx dotted #3d84e5;
+  border-radius: 14rpx;
+  display: inline-block;
+  padding: 0 14rpx;
+  margin-right: 5rpx; 
+}

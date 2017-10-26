@@ -1,0 +1,83 @@
+@import "../../common/weui.wxss";
+page{
+  background:#fafbff;
+}
+.head text{
+  margin: 0 14rpx;
+}
+.page-body{
+   margin: 0 14rpx;
+   border-bottom:solid 1px #e4e7f0;
+}
+.weui-cells{
+   margin: 0 40rpx;
+   border-left:#d9d9d9 1px solid;
+   border-right: #d9d9d9 1px solid;
+}
+.weui-input{
+   width:100%;
+   color:#b1c0e1;
+}
+
+.icon-text{
+  font-size: 20rpx;
+  margin: 22rpx 0 40rpx 40rpx;
+  color: #8398b8;
+}
+.icon-code{
+  width: 45%;
+}
+.page-section{
+  margin-top: 38rpx;
+}
+.wrong-message{
+  text-align: center;
+  margin:40px 0 10px 0;
+  color:red;
+}
+
+.sumit-btn{
+  width:60%;
+  background-color: #126efd;
+  color:#fafbff;
+}
+
+
+.flex-wrp{
+  margin-top: 60rpx;
+  display:flex;
+}
+.flex-item{
+  width: 220rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  text-align: center;
+  margin-left:5rpx;
+  color:#8698be;
+}
+.item1{
+  width:150rpx;
+  text-align: right;
+}
+.item2,.item3{
+  border:solid 1px #a9b8cd;
+  border-radius:10rpx;
+}
+
+.gpa-fenzhi{
+    width:363px;
+    height:0;
+    text-align: center;
+    margin:70rpx 0;
+    font-weight: bold;
+    color:#7a8ca2;
+}
+
+.icon-text1{
+      text-align: center;
+      margin-top:10rpx;
+      font-size: 30rpx;
+      color:#0a65e7;
+}
+ 

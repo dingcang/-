@@ -1,0 +1,71 @@
+<!--testscore.wxml-->
+<import src="../../common/template/header.wxml"/>
+<template is="head" data="{{title}}"></template>
+<form bindsubmit="submitFn">
+<view class="page-body">
+    <view class="page-section">
+        <view class="weui-cells weui-cells_after-title ">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" value="{{school}}" type="text" bindinput="selectschool" bindfocus="focusFn" name="school" placeholder="请输入您就读/毕业学校" placeholder-style="color:#b1c0e1"/>
+            </view>
+        </view>
+    </view>
+
+ <view wx:if="{{scroll}}"> 
+  <scroll-view scroll-y="true" style="height: auto;margin:0 40rpx;">
+      <block wx:for="{{items}}">
+        <view bindtap="setschool" data-school="{{item.schoolcname}}" style="font-size:17px;color:#b1c0e1;margin:10rpx 0 0 6rpx">
+          {{item.schoolcname}}
+        </view>
+      </block>     
+  </scroll-view>   
+ </view> 
+
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title ">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" type="text"  name="professional" bindfocus="focusFn" placeholder="请输入您的专业名称（注:高中请填无）" placeholder-style="color:#b1c0e1"/>
+        </view>
+      </view>
+   </view>
+
+     <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" bindfocus="focusFn" name="major" value="{{array[index]}}" range="{{array}}">
+                <view class="weui-input">{{index==-1?"请选择您的专业类型(注:高中请选其他)":array[index]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class="icon-text">*如果你想去的学校有新的消息,我们将通知您</view>
+</view> 
+
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item item1">GPA:</view>
+      <view class="flex-item  item2" style="{{fenzhi1style}}">
+            <picker bindchange="bindFenzhi1Change" bindfocus="focusFn" selector value="{{index1}}" range="{{fenzhi1}}">
+                  <view class="weui-input" style="{{fenzhi1Color}}">{{fourIndex==false  ? "4分制" :fenzhi1[index1]}}</view>
+            </picker>
+      </view>
+      <view class="flex-item item3" style="{{fenzhi2style}}">
+             <picker bindchange="bindFenzhi2Change" bindfocus="focusFn" selector value="{{index2}}" range="{{fenzhi2}}">
+                  <view class="weui-input" style="{{fenzhi2Color}}">{{baiIndex== false ? "100分制":fenzhi2[index2]}}</view>
+            </picker>
+      </view>
+  </view>
+</view>
+  <textarea class="gpa-fenzhi" name="score" value="{{fenzhiValue}}">GPA:{{fenzhiValue}}分</textarea>
+  <view class="wrong-message" wx:if="{{tipflag}}">{{tip}}</view>
+  <button class="sumit-btn" form-type="submit" >下一步</button>
+  <view class="icon-text1">
+        <navigator url="../target/target?url=eduback" hover-class="none">先去预定留学目标</navigator>
+  </view>
+</form>
+
+
+
+ 

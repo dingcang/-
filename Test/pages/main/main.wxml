@@ -1,0 +1,15 @@
+<!--main.wxml-->
+<view>
+
+    <loading hidden="{{hidden}}">
+        加载中......
+    </loading>
+    <view class="title">{{professional_l}}</view>
+    <view class="card" wx:for="{{items}}" wx:key="{{item.enroll}}">
+            <view class="title">{{item.enroll}}</view>
+            <view class="title">{{item.background}}</view>			
+    </view>
+
+
+	 
+</view>

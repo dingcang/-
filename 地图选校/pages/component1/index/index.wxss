@@ -1,0 +1,58 @@
+/**index.wxss**/
+page{
+  background: #fafbff;
+}
+.form-item-container{
+  padding-left: 80rpx;
+  line-height: 75rpx;
+  height: 75rpx;
+  border-top: 1px solid #cedff4;
+  border-bottom: 1px solid #cedff4;
+  display: flex;
+  background: #fff;
+  color: #a0b6d9;
+  font-size: 28rpx;
+  justify-content: space-between;
+}
+.form-item-container label{
+  margin-right: 30rpx;
+}
+.form-item-container input{
+  line-height: 75rpx;
+  height: auto;
+  flex-grow: 1;
+}
+.getCode{
+  width: 174rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 20rpx;
+  color: #fff;
+  background: #95acc8;
+  border-radius: 3px;
+  margin: 7rpx 22rpx 0 0;
+  padding: 0 10rpx;
+}
+form .form-item-container:nth-child(1){
+  margin-top: 51rpx;
+}
+form .form-item-container:nth-child(2){
+  margin-top: 70rpx;
+  border-bottom: none;
+}
+form .form-item-container:nth-child(4){
+  margin-top: 82rpx;
+  border-bottom: none;
+}
+form .form-item-container:nth-child(6){
+  margin-top: 77rpx;
+  border-bottom: none;
+}
+form button{
+  margin-top: 60rpx;
+  width: 400rpx;
+  height: 94rpx;
+  background: #126efd;
+  color: #fff;
+}

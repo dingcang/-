@@ -1,0 +1,17 @@
+<import src="../../common/template/header.wxml"/>
+<template is="head" data="{{title}}"></template>
+<view class="body">
+  <form bindsubmit="submitFn">
+    <view class="stateContainer">
+      <input style="display:none" name="result" value="{{result}}"></input>	 
+      <view class="state {{state[0] ? 'stateOn' : ''}}" bindtap="state" data-index="0" data-result="没有结果">没有结果</view>
+      <view class="state {{state[1] ? 'stateOn' : ''}}" bindtap="state" data-index="1" data-result="结果不准">结果不准</view>
+    </view>
+    <textarea name="textarea" class="content" bindinput="bindtextChange"/>
+    <view class="wrong-message" wx:if="{{tipflag}}">{{tip}}</view>     
+    <view class="mt156">
+      <button class="resetContent" form-type="reset">清空重写</button>
+      <button class="nextStep" form-type="submit" >提交</button>
+    </view>
+  </form>
+</view>

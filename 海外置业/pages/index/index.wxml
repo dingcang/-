@@ -1,0 +1,36 @@
+<modal confirm-text="" cancel-text="" hidden="{{modalHidden}}">
+  <view class='modal-title'>选择想去的国家</view>
+  <view class='modal-item' hover-class='modal-item-hover' wx:for='{{country}}' data-country='{{item}}' bindtap='cancalModal'>{{item}}</view>
+</modal> 
+<view class='head'>
+  <swiper class='slider-container' indicator-dots='true' indicator-color='rgba(29,32,136,0.5)' autoplay='true' circular='true'>
+    <swiper-item class='slider-item' wx:for='{{sliderItems}}'>
+      <image src='{{item}}' mode='aspectFit'></image>
+    </swiper-item>
+  </swiper>
+  <view class='search-container'>
+    <view class='country' bindtap='changeCountry'>{{currentCountry}}</view>
+    <view class='triangle' bindtap='changeCountry'></view>
+    <navigator class='search' url='../search/search'>请输入所在地域或学校名称</navigator> 
+  </view>
+  <view class='main-button-container'>
+    <button class='main-button' wx:for='{{mainBtn}}'>
+      <image mode='widthFix' src='{{item.imageSrc}}'></image>
+      <view>{{item.content}}</view>
+    </button>
+  </view>
+</view>
+<block wx:for='{{usefulInfo}}'>
+  <view class='info-container'>
+    <view class='info-title'>{{item.title}}</view>
+    <view class='info-item-container'>
+      <view class='info-item' wx:for='{{item.item}}' wx:for-index='idx' wx:for-item='itemI'>
+        <image mode='widthFix' src='{{itemI.imageSrc}}'></image>
+        <view class='house-name'>{{itemI.name}}</view>
+        <view class='house-price'>{{itemI.price}}</view>
+        <view class='house-keywords' wx:for='{{itemI.keywords}}' wx:for-item='keywords'>{{keywords}}</view>
+      </view>
+    </view>
+  </view>
+</block>
+

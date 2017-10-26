@@ -1,0 +1,83 @@
+page{
+  background: #fafbff;
+}
+.head text{
+  margin: 0 15px;
+  line-height: 79rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #8398b8;
+  font-weight: 700;
+  display: block;
+  border-bottom: 1px solid #e2e7f1;
+}
+.wrong-message{
+  text-align: center;
+  margin:40px 0 10px 0;
+  color:red;
+}
+.main{
+  margin: 42rpx 55rpx 0;
+}
+.main picker,.inputContainer{
+  margin-bottom: 36rpx;
+  border: 1rpx solid #a8b7ce;
+  border-radius: 3rpx;
+  padding-left: 40rpx;
+  color: #99b1d6;
+  font-size: 24rpx;
+  background: #fff;
+  position: relative;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.selectBtn{
+  width: 34rpx;
+  height: 88rpx;
+  background: #95acc8;
+  position: absolute;
+  right: -1rpx;
+  top: -1rpx;
+  border: 1rpx solid #a8b7ce;
+  border-bottom-right-radius: 3rpx;
+  border-top-right-radius: 3rpx;
+}
+.selectBtn::after{
+  content: " ";
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-width: 10rpx 8rpx;
+  border-style: solid;
+  border-color: #fafbff #95acc8 #95acc8 #95acc8;
+}
+.inputContainer input{
+  line-height: 88rpx;
+  height: 88rpx;
+  min-height: auto;
+  color: #99b1d6;
+}
+.majorName{
+  color: #99b1d6;
+}
+.secondary{
+  font-size: 24rpx;
+  color: #99b1d6;
+  font-weight: 700;
+  margin: 42rpx 0 19rpx;
+}
+.nextStep{
+  margin: 102rpx auto 0;
+  width: 400rpx;
+  line-height: 94rpx;
+  text-align: center;
+  background: #126efd;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 2rpx;
+}

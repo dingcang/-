@@ -1,0 +1,36 @@
+/* pages/search/search.wxss */
+.search{
+  background: #e2e2e2;
+  width: 724rpx;
+  margin: 31rpx auto 0;
+  line-height: 86rpx;
+  border-radius: 43rpx;
+  height: 86rpx;
+  box-sizing: border-box;
+  padding: 0 43rpx;
+}
+.search-placeholder{
+  font-size: 24rpx;
+  text-align: center;
+  color: #666;
+}
+.tip{
+  font-size: 22rpx;
+  color: #787878;
+  margin: 28rpx 0 0 21rpx;
+}
+.history-container{
+  display: flex;
+  margin: 28rpx 0 0 21rpx;
+  flex-wrap: wrap;
+}
+.history{
+  display: inline-block;
+  background: #efefef;
+  padding: 0 30rpx;
+  line-height: 51rpx;
+  margin-right: 22rpx;
+  margin-bottom: 22rpx;
+  font-size: 24rpx;
+  color: #787878; 
+}

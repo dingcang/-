@@ -1,0 +1,30 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.head text{
+  margin: 0 16px;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #8398b8;
+  font-weight: 700;
+  display: block;
+  border-bottom: 1px solid #e2e7f1;
+}
+.nextStep{
+  margin: 0 auto;
+  width: 400rpx;
+  line-height: 94rpx;
+  text-align: center;
+  background: #126efd;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 2rpx;
+}

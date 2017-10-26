@@ -1,0 +1,20 @@
+<!--specific.wxml-->
+<view>
+
+    <loading hidden="{{hidden}}">
+        加载中......
+    </loading>
+    <view class="title">{{professional}}</view>
+    <view class="card" wx:for="{{items}}" wx:key="{{item.title}}">
+        <view data-professional_l="{{item.title}}" bindtap="onItemClick">
+            <view class="title">{{item.title}}</view>
+        </view>
+    </view>
+
+
+	<block wx:for-items="{{list}}" wx:key="{{item.id}}" wx:if="{{item.name!=professional}}">
+	  <navigator url="../{{item.url}}/{{item.url}}?professional={{item.name}}" class="navigator">	 		
+		<view class="title">{{item.name}}</view>
+	  </navigator>						
+    </block>
+</view>

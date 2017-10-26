@@ -1,0 +1,51 @@
+<!--baseinfo.wxml-->
+<view class="icon-base">基本信息</view>
+<form bindsubmit="submitFn">
+<view class="page-body clearfix">
+    <view class="page-section">
+        <view class="weui-cells weui-cells_after-title ">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="text" bindfocus="focusFn" name="username" placeholder="请输入您的姓名" placeholder-style="color:#b1c0e1"/>
+            </view>
+        </view>
+    </view>
+    <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange"  name="edu" value="{{array[index]}}" range="{{array}}">
+                <view class="weui-input">{{index==-1?"请选择您的就读年级":array[index]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class="icon-text">*如果您想去的学校有新的消息,我们将通知您</view>
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title ">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" type="number" maxlength="11" name="phone" bindfocus="focusFn"  bindinput="inputFn" placeholder="请输入11位手机号" placeholder-style="color:#b1c0e1"/>
+        </view>
+      </view>
+   </view>
+
+    <view class="page-section" style="width:60%;float:left">
+        <view class="weui-cells weui-cells_after-title ">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input"   type="number" maxlength="5" bindfocus="focusFn" name="code" placeholder="请输入验证码" placeholder-style="color:#b1c0e1"/>
+          </view>
+        </view>
+    </view>
+     <view class="page-section" style="width:35%; float:left;">
+         <button class="weui-cells weui-cells_after-title get-sms-code" style="height:43px;line-height:43px;background-color:#94acc8;color:#fff;font-size:14px;margin-left:15px;" disabled="{{codeBtnDisabled}}" bindtap="sendSMS">
+            {{codeStatus}}
+        </button>
+     </view>
+</view> 
+<view class="wrong-message">{{errorMsg}}</view>
+<button class="sumit-btn"form-type="submit" >开始测试</button>
+</form>
+
+
+
+ 

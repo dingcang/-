@@ -1,0 +1,55 @@
+<view class="tip" wx:if="{{tipflag}}">{{tip}}</view>
+<form bindsubmit="bindSubmitTap">
+  <view class="container" bindtap="nameFocus">
+    <label for="name">姓名</label>
+    <input name="name" type="text" id="name" bindinput="bindNameChange" confirm-type="next" focus="{{nameFocus}}"/>
+  </view>
+  <view class="container" bindtap="phoneFocus">
+    <label for="phone">手机号</label>
+    <input type="text" id="phone" name="mobile" bindinput="bindMobileChange" type="number" focus="{{phoneFocus}}"/>
+    <button hover-class="button-hover" bindtap="bindCodeTap">{{codestate}}</button>
+  </view>
+   <view class="container" bindtap="phoneCodeFocus">
+    <label for="phoneCode">手机验证码</label>
+    <input type="number" id="phoneCode" name="code" focus="{{phoneCodeFocus}}"/>
+     
+  </view>
+  <view class="container">
+    <label for="country">目标国家</label>
+    <picker name="country" range="{{country}}" id="country" bindchange="countryChange" value="{{country[countryIndex]}}">
+      <view>{{country[countryIndex]}}</view>
+      <image src="./resources/go.png"></image>
+    </picker>
+  </view>
+    <view class="container">
+    <label for="stage">目标阶段</label>
+    <picker name="stage" range="{{stage}}" id="stage" bindchange="stageChange" value="{{stage[stageIndex]}}">
+      <view>{{stage[stageIndex]}}</view>
+      <image src="./resources/go.png"></image>
+    </picker>
+  </view>
+    <view class="container">
+    <label for="major">想申的专业</label>
+    <picker name="major" range="{{major}}" id="major" bindchange="majorChange" value="{{major[majorIndex]}}">
+      <view>{{major[majorIndex]}}</view>
+      <image src="./resources/go.png"></image>
+    </picker>
+  </view>
+    <view class="container">
+    <label for="currentStage">背景阶段</label>
+    <picker name="currentStage" range="{{currentStage}}" id="currentStage" bindchange="currentStageChange" value="{{currentStage[currentStageIndex]}}">
+      <view>{{currentStage[currentStageIndex]}}</view>
+      <image src="./resources/go.png"></image>
+    </picker>
+  </view>
+  <view class="container noBorder">
+    <label for="currentMajor">在读的专业</label>
+    <picker name="currentMajor" range="{{currentMajor}}" id="currentMajor" bindchange="currentMajorChange" value="{{currentMajor[currentMajorIndex]}}">
+      <view>{{currentMajor[currentMajorIndex]}}</view>
+      <image src="./resources/go.png"></image>
+    </picker>
+  </view>
+<view class="foot">
+  <button formType="submit" hover-class="btn-hover">点击提交</button>
+</view> 
+</form>

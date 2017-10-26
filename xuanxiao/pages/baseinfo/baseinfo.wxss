@@ -1,0 +1,57 @@
+@import "../../common/weui.wxss";
+page{
+  background:#fafbff;
+}
+.icon-base{
+  height: 50px;
+  line-height: 50px;
+  width:100%;
+  font-size:16px;
+  border-bottom:solid 1px #e4e7f0;
+  text-align: center;
+  color: #879abb;
+  font-weight: bold;
+}
+.weui-cells{
+   width:90%;
+   margin-left:20px;
+   border-left:#d9d9d9 1px solid;
+   border-right: #d9d9d9 1px solid;
+   /*text-align: center;*/
+   margin-top:10px;
+}
+.weui-input{
+   width:100%;
+   color:#b1c0e1;
+}
+
+.icon-text{
+  font-size: 12px;
+  margin:10px 15px 0 20px;
+  color:#c6cbe1;
+}
+.icon-code{
+  width:45%;
+}
+.page-section{
+  margin:15px 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.wrong-message{
+  text-align: center;
+  margin:40px 0 10px 0;
+  color:red;
+}
+
+.sumit-btn{
+  width:60%;
+  background-color: #126efd;
+  color:#fafbff;
+}
